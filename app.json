@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "calorieTrack",
-    "slug": "calorieTrack",
+    "slug": "calorietrack",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -39,6 +39,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d002cdb7-d0a2-4880-a96d-0f7faa694289"
+      }
+    },
+    "owner": "chamuka"
   }
 }
