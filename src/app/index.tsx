@@ -1,17 +1,14 @@
-import { Text, View, StyleSheet } from "react-native";
+import * as Device from "expo-device";
+import { Platform, Text, View } from "react-native";
 
-export default function Index() {
+export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
+    <View>
+      <Text>Welcome to Macrozone!</Text>
+      <Text>Running on: {Platform.OS}</Text>
+      <Text>Device Model: {Device.modelName}</Text>
+      <Text>Device Brand: {Device.brand}</Text>
+      <Text>OS Version: {Device.osVersion}</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
