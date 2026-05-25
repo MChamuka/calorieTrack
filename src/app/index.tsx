@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
-
+import { globalStyles } from "../Styles/global";
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>MacroZone</Text>
+    <View style={globalStyles.container}>
+      <Text style={globalStyles.title}>MacroZone</Text>
       <Text style={styles.date}>Monday, March 16</Text>
     </View>
   );
