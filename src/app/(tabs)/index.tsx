@@ -1,14 +1,14 @@
+import HomeHeader from "@/components/HomeHeader";
+import MacroGrid from "@/components/MacroGrid";
 import { globalStyles } from "@/styles/global";
-import { Link } from "expo-router";
-import { ScrollView, Text } from "react-native";
+import { Text, View } from "react-native";
 
-export default function MealsScreen() {
+export default function HomeScreen() {
   return (
-    <ScrollView style={globalStyles.container}>
-      <Text style={globalStyles.title}>All Meals</Text>
-      <Link href="./add-meal" style={{ fontSize: 18, color: "#007bff" }}>
-        Add New Meal
-      </Link>
-    </ScrollView>
+    <View style={globalStyles.container}>
+      <Text style={globalStyles.title}>MacroZone</Text>
+      <HomeHeader />
+      <MacroGrid />
+    </View>
   );
 }
